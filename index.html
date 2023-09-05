@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <script
+      src="https://code.jquery.com/jquery-3.6.4.js"
+      integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E="
+      crossorigin="anonymous"
+    ></script>
+
+    <header>
+      <div class="container">
+        <nav>
+          <div class="logo">
+            <a href="/"> <img src="img/greenyol-logo.png" alt="" /></a>
+          </div>
+          <div class="navbar1">
+            <ul>
+              <li><a href="#">AZ</a></li>
+              <li><a href="#">EN</a></li>
+              <li><a href="#">RU</a></li>
+            </ul>
+          </div>
+
+          <div class="navbar2">
+            <ul>
+              <li>
+                <a href="#" class="drop">Şirkət</a>
+                <ul>
+                  <li><a href="#">Haqqında</a></li>
+                  <li><a href="#">Direktorun müraciəti</a></li>
+                  <li><a href="#">Missiya və vizyonumuz</a></li>
+                  <li><a href="#">Sertifikatlar</a></li>
+                </ul>
+              </li>
+              <li><a href="#" class="drop">Xidmətlər</a></li>
+              <li><a href="#" class="drop">Layihələr</a></li>
+              <li><a href="#" class="drop">Tərəfdaşlar</a></li>
+              <li><a href="#" class="drop">Əlaqə</a></li>
+            </ul>
+          </div>
+
+          <button
+            type="button"
+            class="btn1"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+            data-bs-whatever="@mdo"
+          >
+            Qiymət təklifi al
+          </button>
+          <div class="hamburger-menu" id="hamburger-menu">
+            <span id="span1"></span>
+            <span id="span2"></span>
+          </div>
+
+          <div
+            class="modal fade"
+            id="exampleModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">
+                    New message
+                  </h1>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="mb-3">
+                      <label for="recipient-name" class="col-form-label"
+                        >Recipient:</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="recipient-name"
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <label for="message-text" class="col-form-label"
+                        >Message:</label
+                      >
+                      <textarea
+                        class="form-control"
+                        id="message-text"
+                      ></textarea>
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                  <button type="button" class="btn btn-primary">
+                    Send message
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <ul class="ham-menu" id="ham-menu">
+          <li><a href="">Şirkət</a></li>
+          <li><a href="">Xidmətlər</a></li>
+          <li><a href="">Layihələr</a></li>
+          <li><a href="">Tərəfdaşlar</a></li>
+          <li><a href="">Əlaqə</a></li>
+          <div class="navbar1">
+            <ul>
+              <li><a href="#">AZ</a></li>
+              <li><a href="#">EN</a></li>
+              <li><a href="#">RU</a></li>
+            </ul>
+          </div>
+          <button
+            type="button"
+            class="btn1"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+            data-bs-whatever="@mdo"
+          >
+            Qiymət təklifi al
+          </button>
+        </ul>
+      </div>
+    </header>
+
+    <!-- bootstrap -->
+    <div
+      id="carouselExampleInterval"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <div class="img carousel-item active overlay" data-bs-interval="10000">
+          <img
+            src="img/logistic2.jpg"
+            class="animate__animated animate__pulse d-block w-100"
+            alt="..."
+          />
+          <div class="container">
+            <div
+              class="img-content"
+              class="animate__animated animate__fadeInLeft"
+            >
+              <span class="animate__animated animate__fadeInLeft"
+                >Biznesiniz üçün</span
+              >
+              <h2 class="animate__animated animate__fadeInLeft">
+                Lorem, ipsum dolor.
+              </h2>
+              <p class="animate__animated animate__fadeInLeft">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam
+                velit alias, vel hic nihil est.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="img carousel-item overlay" data-bs-interval="2000">
+          <img
+            src="img/logistic1.jpg "
+            class="animate__animated animate__pulse d-block w-100"
+            alt="..."
+          />
+          <div class="container">
+            <div class="img-content">
+              <span class="animate__animated animate__fadeInLeft"
+                >Biznesiniz üçün</span
+              >
+              <h2 class="animate__animated animate__fadeInLeft">
+                Lorem, ipsum dolor sit amet
+              </h2>
+              <p class="animate__animated animate__fadeInLeft">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque
+                expedita odit, laborum minima doloribus quo ab commodi! Eos,
+                tenetur quam.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="img carousel-item overlay">
+          <img
+            src="img/logistic3.jpg "
+            class="animate__animated animate__pulse d-block w-100"
+            alt="..."
+          />
+          <div class="container">
+            <div class="img-content">
+              <span class="animate__animated animate__fadeInLeft"
+                >Biznesiniz üçün</span
+              >
+              <h2 class="animate__animated animate__fadeInLeft">Lorem</h2>
+              <p class="animate__animated animate__fadeInLeft">Lorem ipsum</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="slider-button">
+          <button
+            class=""
+            type="button"
+            data-bs-target="#carouselExampleInterval"
+            data-bs-slide="prev"
+          >
+            <i class="fa-sharp fa-solid fa-arrow-left"></i>
+          </button>
+          <button
+            class=""
+            type="button"
+            data-bs-target="#carouselExampleInterval"
+            data-bs-slide="next"
+          >
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Haqqimizda -->
+    <div class="container">
+      <div class="head">
+        <h1>Haqqımızda</h1>
+        <div class="blue-white-sections">
+          <a class="blue-section" href="#">
+            <button>Şirkət</button>
+            <h3>Lorem ipsum dolor sit amet consectetur</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
+              saepe impedit quia quis voluptatem quos!
+            </p>
+            <div class="section-2">
+              <span id="demo1" class="animate__animated">14</span>
+              <p id="demo2" class="animate__animated">illik təcrübə</p>
+            </div>
+            <div class="section-3">
+              <div class="section-3-button">
+                <button><i class="fa-solid fa-arrow-right"></i></button>
+              </div>
+
+              <div class="section-3-content">
+                <p>Şirkət Haqqında</p>
+                <p>daha ətraflı</p>
+              </div>
+            </div>
+          </a>
+
+          <a class="white-section" href="#">
+            <button>Sertifikatlar</button>
+            <h3>Rəsmi lisenziya əsasında fəaliyyət</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
+              saepe impedit quia quis voluptatem quos!
+            </p>
+            <div class="section-3">
+              <button><i class="fa-solid fa-arrow-right"></i></button>
+              <div class="section-3-image"></div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- griddd -->
+
+    <div class="container-fluid text-center grid-section">
+      <div class="row" style="text-align: center">
+        <div class="col-xl-6 col-md-6">
+          <a class="card-1 clip" href="#">
+            <video src="img/video1.mp4" loop muted></video>
+            <div class="card-1-content card-content-position">
+              <span>xidmət</span>
+              <h4>Təchizat xidmətləri</h4>
+              <p>Daha ətraflı</p>
+            </div>
+          </a>
+        </div>
+        <div class="col-xl-3 col-md-6">
+          <a class="card-2" href="#">
+            <div class="card-2-content card-content-position">
+              <span>3</span>
+              <h4>Fəaliyyət istiqaməti</h4>
+            </div>
+          </a>
+        </div>
+        <div class="col-xl-3 col-md-12">
+          <a class="card-3 clip" href="#">
+            <video src="img/video2.mp4" loop muted></video>
+            <div class="card-1-content card-content-position">
+              <span>xidmət</span>
+              <h4>Logistika xidməti</h4>
+              <p>Daha ətraflı</p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xl-3 col-md-6">
+          <a class="card-4" href="#">
+            <div class="card-2-content card-content-position">
+              <span>600+</span>
+              <h4>Təchiz edə biləcəyimiz məhsul çeşidi</h4>
+            </div>
+          </a>
+        </div>
+        <div class="col-xl-3 col-md-6">
+          <a class="card-5" href="#">
+            <div class="card-2-content card-content-position">
+              <span>17+</span>
+              <h4>
+                Ölkəyə məhsullarınızın etibarlı şəkildə logistikasının təşkili
+              </h4>
+            </div>
+          </a>
+        </div>
+        <div class="col-xl-3 col-md-6">
+          <a class="card-6 clip" href="#">
+            <video src="img/video3.mp4" type="video/mp4" loop muted></video>
+            <div class="card-1-content card-content-position">
+              <span>xidmət</span>
+              <h4>Satış xidməti</h4>
+              <p>Daha ətraflı</p>
+            </div>
+          </a>
+        </div>
+        <div class="col-xl-3 col-md-6">
+          <a class="card-7" href="#">
+            <div class="card-2-content card-content-position">
+              <span>20+</span>
+              <h4>
+                Əməkdaşlıq etdiyimiz beynəlxalq və yerli istehsalçı şirkət
+              </h4>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- layihələr -->
+    <div class="layiheler">
+      <div class="container">
+        <div class="layiheler-head">
+          <div class="layiheler-head-content">
+            <p>Ən son icra etdiyimiz uğurlu layihələrdən bəziləri</p>
+            <h3>Layihələr</h3>
+          </div>
+          <div class="layiheler-head-content">
+            <button>Bütün layihələrə bax</button>
+          </div>
+        </div>
+        <div class="layiheler-body">
+          <table>
+            <tr>
+              <th>Sifarişçi</th>
+              <th>Layihə</th>
+              <th>Xidmət</th>
+              <th>Müddəti</th>
+              <th>İcra tarixi</th>
+            </tr>
+            <tr>
+              <td>Lorem ipsum dolor sit amet.</td>
+              <td>Lorem ipsum dolor sit amet consectetur, adipicising elit.</td>
+              <td>lorem</td>
+              <td>5 gün</td>
+              <td class="button">
+                2023
+                <button><i class="fa-solid fa-arrow-right-long"></i></button>
+              </td>
+            </tr>
+            <tr>
+              <td>Lorem ipsum dolor sit amet.</td>
+              <td>Lorem ipsum dolor sit amet consectetur, adipicising elit.</td>
+              <td>lorem</td>
+              <td>5 gün</td>
+              <td class="button">
+                2023
+                <button><i class="fa-solid fa-arrow-right-long"></i></button>
+              </td>
+            </tr>
+            <tr>
+              <td>Lorem ipsum dolor sit amet.</td>
+              <td>Lorem ipsum dolor sit amet consectetur, adipicising elit.</td>
+              <td>lorem</td>
+              <td>5 gün</td>
+              <td class="button">
+                2023
+                <button><i class="fa-solid fa-arrow-right-long"></i></button>
+              </td>
+            </tr>
+            <tr>
+              <td>Lorem ipsum dolor sit amet.</td>
+              <td>Lorem ipsum dolor sit amet consectetur, adipicising elit.</td>
+              <td>lorem</td>
+              <td>5 gün</td>
+              <td class="button">
+                2023
+                <button><i class="fa-solid fa-arrow-right-long"></i></button>
+              </td>
+            </tr>
+            <tr>
+              <td>Lorem ipsum dolor sit amet.</td>
+              <td>Lorem ipsum dolor sit amet consectetur, adipicising elit.</td>
+              <td>lorem</td>
+              <td>5 gün</td>
+              <td class="button">
+                2023
+                <button><i class="fa-solid fa-arrow-right-long"></i></button>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- Referanslar -->
+    <div class="container">
+      <div class="referanslar">
+        <h1>Referanslar</h1>
+        <div class="container text-center">
+          <div class="row">
+            <div class="col-xl-2">
+              <a href="#" class="card">
+                <img src="img/gerb.jpg" alt="" />
+                <p>Lorem</p>
+              </a>
+            </div>
+            <div class="col-xl-2">
+              <a href="#" class="card">
+                <img src="img/gerb.jpg" alt="" />
+                <p>Lorem</p>
+              </a>
+            </div>
+            <div class="col-xl-2">
+              <a href="#" class="card">
+                <img src="img/gerb.jpg" alt="" />
+                <p>Lorem</p>
+              </a>
+            </div>
+            <div class="col-xl-2">
+              <a href="#" class="card">
+                <img src="img/gerb.jpg" alt="" />
+                <p>Lorem</p>
+              </a>
+            </div>
+            <div class="col-xl-2">
+              <a href="#" class="card">
+                <img src="img/gerb.jpg" alt="" />
+                <p>Lorem</p>
+              </a>
+            </div>
+            <div class="col-xl-2">
+              <a href="#" class="card">
+                <img src="img/gerb.jpg" alt="" />
+                <p>Lorem</p>
+              </a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xl-2">
+              <a href="#" class="card">
+                <img src="img/gerb.jpg" alt="" />
+                <p>Lorem</p>
+              </a>
+            </div>
+            <div class="col-xl-2">
+              <a href="#" class="card">
+                <img src="img/gerb.jpg" alt="" />
+                <p>Lorem</p>
+              </a>
+            </div>
+            <div class="col-xl-2">
+              <a href="#" class="card">
+                <img src="img/gerb.jpg" alt="" />
+                <p>Lorem</p>
+              </a>
+            </div>
+            <div class="col-xl-2">
+              <a href="#" class="card">
+                <img src="img/gerb.jpg" alt="" />
+                <p>Lorem</p>
+              </a>
+            </div>
+            <div class="col-xl-4 card1">
+              <h2>
+                Bizə etibar edən dövlət müəssisələri və özəl təşkilatlarla tanış
+                olun
+              </h2>
+              <a href="#">Bütün referanslara bax</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+
+    <footer>
+        <div class="container">
+            <div class="footer">
+
+        
+      <div class="all-footer-content">
+  
+        <div class="footer-content">
+          <h3>Əlaqə</h3>
+          <ul>
+            <li><a href="#"><i class="fa-solid fa-phone"></i>(+994) 000-00-00</a></li>
+            <li><a href="#"><i class="fa-solid fa-envelope"></i>Email adresi</a></li>
+          </ul>
+        </div>
+        <div class="footer-content">
+          <h3>Şirkət</h3>
+          <ul>
+            <li><a href="#">Haqqında</a></li>
+            <li><a href="#">Sertifikatlar</a></li>
+            <li><a href="#">Missiyamız</a></li>
+            <li><a href="#">Siyasət</a></li>
+          </ul>
+        </div>
+        <div class="footer-content">
+          <h3>Xidmətlər</h3>
+          <ul>
+            <li><a href="#">Haqqında</a></li>
+            <li><a href="#">Sertifikatlar</a></li>
+            <li><a href="#">Missiyamız</a></li>
+            <li><a href="#">Siyasət</a></li>
+            <li><a href="#">Siyasət</a></li>
+          </ul>
+        </div>
+        <div class="footer-content">
+          <h3>Digər</h3>
+          <ul>
+            <li><a href="#">Haqqında</a></li>
+            <li><a href="#">Sertifikatlar</a></li>
+            <li><a href="#">Missiyamız</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="all-footer-content">
+        <div class="footer-content footer-social-media">
+          <ul>
+            <li><a href="#"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+            <li><a href="#"><i class="fa-brands fa-facebook"></i>Facebook</a></li>
+            <li><a href="#"><i class="fa-brands fa-linkedin-in"></i> Linkedin</a></li>
+            <li><a href="#"><i class="fa-brands fa-youtube"></i> Youtube</a></li>
+          </ul>
+        </div>
+        <div class="footer-content-end">
+          <img src="/img/greenyol-logo.png" alt="logo" />
+          <p>
+            Gələcək məqsədlərimiz isə fəaliyyət göstərdiyimiz sahələr üzrə
+            dahada böyümək, ölkə hüdudlarını aşaraq təchizat,logistika, satış və
+            servis sektorunda Azərbaycan brendini dünyaya tanıtmaqdır.
+          </p>
+          <div>
+            <span>Sualiniz var?</span>
+            <button>Bizə yazın</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    </footer>
+
+    <script src="./script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/fdb9fe0c7b.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
